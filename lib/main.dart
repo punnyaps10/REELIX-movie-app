@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:netfilx/features/home/presentation/screens/home_screen.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:netfilx/features/movies/presentation/pages/home_page.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp( ProviderScope(child: MyApp()));
 }
 
 class MyApp extends StatelessWidget {
@@ -12,10 +13,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-   home:  HomeScreen(),
-   debugShowCheckedModeBanner: false,
    
-       
+ 
+   debugShowCheckedModeBanner: false,
+
+   title: 'Reelix',
+   theme: ThemeData(useMaterial3: true,),
+
+       home: HomePage() ,
     );
   }
 }
