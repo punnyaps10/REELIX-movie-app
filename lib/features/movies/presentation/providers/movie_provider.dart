@@ -1,4 +1,3 @@
-import 'package:dio/dio.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:netfilx/core/network/dio_client.dart';
 import 'package:netfilx/features/movies/data/datasources/movie_remote_data_source.dart';

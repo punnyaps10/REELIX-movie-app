@@ -18,7 +18,7 @@ class DioClient {
     dio.interceptors.add(
       InterceptorsWrapper(
         onRequest: (options, handler) {
-          options.headers['Authorization'] = 'Bearer YOUR_TMDB_ACCESS_TOKEN';
+          options.headers['Authorization'] = 'Bearer  ${ApiConstants.accesstoken}';
           handler.next(options);
         },
       ),

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:netfilx/features/movies/presentation/pages/home_page.dart';
+import 'package:netfilx/features/movies/presentation/pages/splash_screen.dart';
 
 void main() {
   runApp( ProviderScope(child: MyApp()));
@@ -18,9 +18,12 @@ class MyApp extends StatelessWidget {
    debugShowCheckedModeBanner: false,
 
    title: 'Reelix',
-   theme: ThemeData(useMaterial3: true,),
+   theme: ThemeData(brightness:Brightness.dark ,
+   ),
 
-       home: HomePage() ,
+       home:const  SplashScreen() ,
+       
+
     );
   }
 }
